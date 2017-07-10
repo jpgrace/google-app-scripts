@@ -10,6 +10,10 @@ To use this script:
 3. Name the script & project.
 4. Copy and paste the script from this repo to the file on GSuite.
 
+## System Config ##
+
+This project has no dependencies.
+
 ## Usage ###
 
 ### PERCENTCOMPLETE ###
@@ -22,3 +26,7 @@ Fixes or changes should be submitted as PRs.
 ### Testing ###
 
 Testing is very rudimentary. There are a number of conditional assertions written within the same file that print either PASS or FAIL to the console. To run the tests, run: `node PERCENTCOMPLETE.js`.
+
+## Owner ##
+
+This project is maintained by `jpgrace`.
