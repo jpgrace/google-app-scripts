@@ -1,7 +1,3 @@
-if (!Logger) {
-  var Logger = console;
-}
-
 /**
  * A custom function that computes a KPIs progress through the year. This function
  * takes in three numbers (baseline, current, and target) and returns the percent
@@ -37,10 +33,6 @@ function PERCENTCOMPLETE(baseline,current,target,is_target_larger) {
       percent_complete = 1;
     }
   }
-
-  if (baseline > current && is_target_larger === true) {
-    percent_complete = 0;
-  }
   
   if (percent_complete < 0) {
     percent_complete = 0;
@@ -57,6 +49,10 @@ function calculate_percentage(baseline,current,target) {
 }
 
 /** Tests */
+// For running locally.
+if (!Logger) {
+  var Logger = console;
+}
 // Not a number. 
 var value_not_a_number = PERCENTCOMPLETE(0,0,0);
 if (value_not_a_number === "") {
